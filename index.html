@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b08">
+  <meta name="description" content="A-One Pizza Shop — freshly baked pizzas, loaded with flavour. Choose your favourite pizza and size.">
+  <title>A-One Pizza Shop | Freshly Baked, Always Delicious</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">🍕 HOT, FRESH & MADE WITH LOVE — EVERY SINGLE TIME</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="A-One Pizza Shop home">
+      <span class="brand-mark">A<span>★</span></span>
+      <span class="brand-name">A-One <small>Pizza Shop</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#why-us">Why A-One?</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="Open shopping cart">
+      <span>🛒</span> Cart <b id="cartCount">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> FRESH FROM THE OVEN <span></span></p>
+        <h1>Good food.<br><em>Great mood.</em></h1>
+        <p class="hero-copy">Big flavour, golden crust and melty cheese. Your next favourite pizza is just a click away.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore the menu <span>→</span></a>
+          <a class="text-link" href="#why-us">Why choose us?</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Fresh ingredients</span><span>✓ Baked to order</span><span>✓ Serious flavour</span>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Delicious freshly baked pizza with melted cheese">
+        <div class="hero-glow"></div>
+        <img src="assets/a-one-hero.png" alt="A-One Pizza Shop pizza special" onerror="this.style.display='none'">
+        <div class="price-stamp"><small>STARTING FROM</small><strong>Rs. 700</strong><small>PURE PIZZA JOY</small></div>
+      </div>
+      <div class="hero-bottom">A LITTLE SLICE OF HAPPINESS <span>✦</span> MADE FRESH FOR YOU</div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">THE GOOD STUFF</p>
+        <h2>Meet your <em>match.</em></h2>
+        <p>Four delicious flavours. Three satisfying sizes. One very happy you.</p>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="pizza-card" data-flavour="Classic Cheese">
+          <div class="pizza-photo photo-cheese"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=85" alt="Classic cheese pizza" loading="lazy"></div>
+          <div class="card-body"><div class="card-top"><span class="tag">THE CLASSIC</span><span class="rating">★ 4.9</span></div><h3>Classic Cheese</h3><p>Golden crust, rich tomato sauce and a blanket of stretchy mozzarella.</p><button class="add-button" data-flavour="Classic Cheese">Choose size <span>＋</span></button></div>
+        </article>
+        <article class="pizza-card" data-flavour="Pepperoni Delight">
+          <div class="pizza-photo photo-pepperoni"><img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=900&q=85" alt="Pepperoni delight pizza" loading="lazy"></div>
+          <div class="card-body"><div class="card-top"><span class="tag">CUSTOMER FAVOURITE</span><span class="rating">★ 5.0</span></div><h3>Pepperoni Delight</h3><p>Spicy pepperoni, bubbling cheese and a little kick in every bite.</p><button class="add-button" data-flavour="Pepperoni Delight">Choose size <span>＋</span></button></div>
+        </article>
+        <article class="pizza-card" data-flavour="BBQ Chicken">
+          <div class="pizza-photo photo-bbq"><img src="https://images.unsplash.com/photo-1594007654729-407e8b9b1f6b?auto=format&fit=crop&w=900&q=85" alt="Barbecue chicken pizza" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85'"></div>
+          <div class="card-body"><div class="card-top"><span class="tag">SMOKY & SAVOURY</span><span class="rating">★ 4.8</span></div><h3>BBQ Chicken</h3><p>Tender chicken, smoky BBQ sauce, onions and a generous cheese finish.</p><button class="add-button" data-flavour="BBQ Chicken">Choose size <span>＋</span></button></div>
+        </article>
+        <article class="pizza-card" data-flavour="Veggie Supreme">
+          <div class="pizza-photo photo-veggie"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=900&q=85" alt="Veggie supreme pizza" loading="lazy"></div>
+          <div class="card-body"><div class="card-top"><span class="tag">GARDEN FRESH</span><span class="rating">★ 4.9</span></div><h3>Veggie Supreme</h3><p>Colourful capsicum, olives, onion, sweet corn and loads of flavour.</p><button class="add-button" data-flavour="Veggie Supreme">Choose size <span>＋</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="size-band">
+      <div class="section-wrap size-inner">
+        <div><p class="eyebrow">PICK YOUR SIZE</p><h2>There's a size for <em>every craving.</em></h2></div>
+        <div class="size-options">
+          <div class="size-option"><span class="size-icon">🍕</span><strong>Small</strong><small>6 inches</small><b>Rs. 700</b></div>
+          <div class="size-option featured"><span class="popular">MOST POPULAR</span><span class="size-icon">🍕</span><strong>Medium</strong><small>9 inches</small><b>Rs. 1,000</b></div>
+          <div class="size-option"><span class="size-icon">🍕</span><strong>Large</strong><small>12 inches</small><b>Rs. 1,500</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section section-wrap" id="why-us">
+      <div class="why-image"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=85" alt="Fresh pizza straight from the oven" loading="lazy"></div>
+      <div class="why-copy"><p class="eyebrow">MORE THAN JUST PIZZA</p><h2>Made with care.<br><em>Remembered for flavour.</em></h2><p>At A-One Pizza Shop, every pizza is made to bring people together. From the first bite to the last cheesy stretch, we're all about good ingredients and great moments.</p>
+        <div class="benefits"><div><span>✦</span><b>Freshly prepared</b><small>Made when you order</small></div><div><span>♨</span><b>Oven baked</b><small>Golden, delicious crust</small></div><div><span>♥</span><b>Full of flavour</b><small>Something for everyone</small></div></div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="cta-inner"><p class="eyebrow">YOUR PIZZA MOMENT IS CALLING</p><h2>Ready for a <em>slice?</em></h2><p>Pick your flavour, choose your size and build your order.</p><a href="#menu" class="btn btn-light">Order your pizza <span>→</span></a></div>
+      <div class="cta-doodle">🍕</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">A<span>★</span></span><span class="brand-name">A-One <small>Pizza Shop</small></span></a>
+    <p>Good food. Great mood. Always.</p>
+    <div class="footer-links"><a href="#menu">Menu</a><a href="#why-us">About</a><a href="#contact">Contact</a></div>
+    <small>© <span id="year"></span> A-One Pizza Shop. Made with ♥ for pizza lovers.</small>
+  </footer>
+
+  <div class="modal-backdrop" id="sizeModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-modal" id="closeSizeModal" aria-label="Close">×</button>
+      <p class="eyebrow">MAKE IT YOURS</p><h2 id="modalTitle">Choose your size</h2><p class="modal-flavour" id="modalFlavour"></p>
+      <div class="modal-sizes">
+        <button class="size-choice" data-size="Small" data-price="700"><span>Small · 6"</span><b>Rs. 700</b></button>
+        <button class="size-choice" data-size="Medium" data-price="1000"><span>Medium · 9"</span><b>Rs. 1,000</b></button>
+        <button class="size-choice" data-size="Large" data-price="1500"><span>Large · 12"</span><b>Rs. 1,500</b></button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR ORDER</p><h2>Your pizza box</h2></div><button id="closeCart" class="close-modal" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart">Your cart is looking hungry. Add a pizza! 🍕</p></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">Rs. 0</strong></div>
+    <button class="btn btn-primary checkout-button" id="checkoutButton">Continue <span>→</span></button>
+    <p class="cart-note">Demo checkout: no payment is collected on this website.</p>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
